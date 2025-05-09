@@ -1,4 +1,6 @@
 total_spending = int(input("Enter your purchasing amount: "))
+if total_spending < 1000:
+	print("invalid purchaseing amount")
 
 purchase_between_1000_10000 = float(5/100) * total_spending
 
@@ -12,8 +14,7 @@ purchase_between_above_50000 = float(20 / 100) * total_spending
 
 new_discount_amount_above_50000  = int(total_spending - purchase_between_above_50000 )
 
-
-	#print("invalid purchaseing amount")	
+		
 if total_spending >= 1000 and total_spending < 10000:
 	print(f" you recieved  %5 discount for this package : {purchase_between_1000_10000: .2f}$ ")
 	print(f" your new discount amount is: {new_discount_amount_1000_10000:,.2f}$ ")
