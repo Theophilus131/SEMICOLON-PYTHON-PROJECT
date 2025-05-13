@@ -1,5 +1,9 @@
+e_estimate = 1
+factorial = 1
 
+for e in range(1, 11):
 
-for e in range(10):
+	factorial *= e
+	e_estimate += 1 / factorial
 
-	print(f" {e = 1 + 1/1*1 + 1/2*1 + 1/3*2*1} ")
+print(f" estimated value of e after 10 terms {e_estimate} ")
