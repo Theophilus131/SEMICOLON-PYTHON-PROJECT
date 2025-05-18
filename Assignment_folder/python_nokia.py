@@ -283,6 +283,161 @@ def tones_menu():
             case _:
                 print("Invalid input. Try again.")
 
+def settings_menu():
+    while True:
+        menu = """
+        Settings Menu:
+       1 - Call settings
+       2 - Phone settings
+       3 - Security settings
+       4 - Restore factory settings
+       0 - Back
+        """
+        print(menu)
+        choice = input("Select option: ")
+
+        match choice:
+            case "1":
+                print("Call settings.")
+            case "2":
+                print("Phone settings")
+            
+            case "3":
+                print("Security settings")
+            case "4":
+                print("Restore factory settings")
+        
+            case "0":
+                break
+            case _:
+                print("Invalid input. Try again.")
+
+
+def call_divert_menu():
+     while True:
+       menu = """
+       call divert menu
+
+       0 - Back
+         """
+       print(menu)
+       choice = input("Select option: ")
+
+       match choice:
+            
+            case "0": 
+                break
+            case _:
+                 print("invalid input. ")
+
+
+def games_menu():
+     while True:
+       menu = """
+       Game menu
+
+       0 - Back
+         """
+       print(menu)
+       choice = input("Select option: ")
+
+       match choice:
+            
+            case "0": 
+                break
+            case _:
+                 print("invalid input. ")
+
+
+def calculator_menu():
+     while True:
+       menu = """
+       Calculator menu
+
+       0 - Back
+         """
+       print(menu)
+       choice = input("Select option: ")
+
+       match choice:
+            
+            case "0": 
+                break
+            case _:
+                 print("invalid input. ")
+
+
+def reminders_menu():
+     while True:
+       menu = """
+       reminders menu
+
+       0 - Back
+         """
+       print(menu)
+       choice = input("Select option: ")
+
+       match choice:
+            
+            case "0": 
+                break
+            case _:
+                 print("invalid input. ")
+
+
+
+def clock_menu():
+     while True:
+       	menu = """
+        clock  Menu:
+
+       1 - Alarm clock
+       2 - Clock settings
+       3 - Date setting
+       4 - Stopwatch
+       5 - Countdown timer
+       6 - Auto update of date and time
+       0 - Back
+
+        """
+
+        print(menu)
+        choice = input("Select option: ")
+
+
+        print(menu)
+        choice = input("Select option: ")
+ 
+        match choice:
+            case "1":
+                print("Alarm clock selected.")
+            case "2":
+                print("Clock settings selected.")
+            
+            case "3":
+                print("Date setting")
+            case "4":
+                print("Stopwatch")
+        
+            case "5":
+                print(" Countdown timer")
+            case "6":
+                print(" Auto update of date and time")
+          
+            case "0":
+                break
+            case _:
+                print("Invalid input. Try again.")
+
+
+
+
+
+
+
+
+
+
 
 
 
