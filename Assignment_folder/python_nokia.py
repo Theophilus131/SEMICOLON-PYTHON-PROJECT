@@ -80,7 +80,7 @@ def phonebook_menu():
             case "1":
                 print("Search selected.")
             case "2":
-                print("Add name selected.")
+                print("service Nos selected.")
             
             case "3":
                 print("add name")
@@ -169,10 +169,121 @@ def chart_menu():
 
        match choice:
             case "1":
-                print("Write message selected.")
+                print("Chart.")
             case "0": 
                 break
             case _:
                  print("invalid input. ")
+
+
+
+def call_register_menu():
+     while True:
+       	menu = """
+        Call Register Menu:
+
+        1 - missed call
+        2 - recieved call
+        3  - dialled numbers
+        4  - erase recent call
+        5 - Show call duration
+    	6 - Show call cost
+    	7 - Call cost settings
+    	8 - Prepaid credit
+        0 - Back
+
+        """
+        print(menu)
+        choice = input("Select option: ")
+
+
+        print(menu)
+        choice = input("Select option: ")
+
+       	match choice:
+
+            case "1":
+                print("missed call")
+
+            case "2":
+                print("recieved call")
+            
+            case "3":
+                print("dialled numbers")
+
+            case "4":
+                print("erase recent call")
+        
+            case "5":
+                print("Show call duration")
+
+            case "6":
+                print("Show call cost")
+            case "7":
+                print("Call cost settings")
+            case "8":
+                print("Prepaid credit selected")
+           
+            case "0":
+                break
+            case _:
+                print("Invalid input. Try again.")
+
+
+def tones_menu():
+     while True:
+       	menu = """
+        Tones settings Menu:
+
+       1 - Ringing tone
+       2 - Ringing volume
+       3 - Incoming call alert
+       4 - Composer
+       5 - Message alert tone
+       6 - Keypad tones
+       7 - Warning and game tones
+       8 - Vibrating alert
+       9 - Screen saver
+       0 - Back
+
+        """
+
+        print(menu)
+        choice = input("Select option: ")
+
+
+        print(menu)
+        choice = input("Select option: ")
+ 
+        match choice:
+            case "1":
+                print("Ringing tone selected.")
+            case "2":
+                print("Ringing volume selected.")
+            
+            case "3":
+                print("Incoming call alert")
+            case "4":
+                print("Composer")
+        
+            case "5":
+                print("Message alert tone")
+            case "6":
+                print("Keypad tones")
+            case "7":
+                print("Warning and game tones")
+            case "8":
+                print("Vibrating alert")
+            
+            case "9":
+                print(" Screen saver")
+
+            case "0":
+                break
+            case _:
+                print("Invalid input. Try again.")
+
+
+
 
 main_menu()
