@@ -157,4 +157,22 @@ def messages_menu():
             case _:
                 print("Invalid input. Try again.")
 
+def chart_menu():
+     while True:
+       menu = """
+       chart menu
+       1 - chart
+       0 - Back
+         """
+       print(menu)
+       choice = input("Select option: ")
+
+       match choice:
+            case "1":
+                print("Write message selected.")
+            case "0": 
+                break
+            case _:
+                 print("invalid input. ")
+
 main_menu()
