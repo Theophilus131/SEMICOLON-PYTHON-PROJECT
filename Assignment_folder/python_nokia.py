@@ -440,7 +440,42 @@ def settings_menu():
  
 
 				
-			case "3": print("Security settings")
+			case "3": 
+				while True:
+					menu ="""
+					phone settinggs menu:
+					 	
+					1 - Pin code request
+					2 - Call barring service
+					3 - Fixed dialing
+					4 - Closed user group
+					5 - Phone security
+					6 - Change access codes
+					0 - Back
+ 
+					"""
+					print(menu) 
+					choice = input("select option")
+			
+					match choice:
+						case "1": print(" Pin code request")
+                               
+						case "2": print(" Call barring service")
+
+						case "3": print(" Fixed dialing")
+
+						case "4": print("Closed user group")
+					
+						case "5": print("Phone security")
+						
+						case "6": print("Change access codes")
+
+						case "0":
+							break
+						case _:
+							print("Invalid input. Try again.")
+
+
 			case "4": print("Restore factory settings")
         
 			case "0":
@@ -450,21 +485,20 @@ def settings_menu():
 
 
 def call_divert_menu():
-     while True:
-       menu = """
-       call divert menu
-
-       0 - Back
-         """
-       print(menu)
-       choice = input("Select option: ")
-
-       match choice:
+	while True:
+		menu = """
+		call divert menu
+		0 - Back
+         	"""
+		print(menu)
+		choice = input("Select option: ")
+		
+		match choice:
             
-            case "0": 
-                break
-            case _:
-                 print("invalid input. ")
+			case "0": 
+				break
+			case _:
+				print("invalid input. ")
 
 
 def games_menu():
@@ -523,9 +557,9 @@ def reminders_menu():
 
 
 def clock_menu():
-     while True:
-       	menu = """
-        clock  Menu:
+	while True:
+		menu = """
+		clock  Menu:
 
        1 - Alarm clock
        2 - Clock settings
@@ -537,33 +571,21 @@ def clock_menu():
 
         """
 
-        print(menu)
-        choice = input("Select option: ")
-
-
-        print(menu)
-        choice = input("Select option: ")
+		print(menu)
+		choice = input("Select option: ")
  
-        match choice:
-            case "1":
-                print("Alarm clock selected.")
-            case "2":
-                print("Clock settings selected.")
-            
-            case "3":
-                print("Date setting")
-            case "4":
-                print("Stopwatch")
-        
-            case "5":
-                print(" Countdown timer")
-            case "6":
-                print(" Auto update of date and time")
+		match choice:
+			case "1": print("Alarm clock selected.")
+			case "2": print("Clock settings selected.")
+			case "3": print("Date setting")
+			case "4": print("Stopwatch")
+			case "5": print(" Countdown timer")
+			case "6": print(" Auto update of date and time")
           
-            case "0":
-                break
-            case _:
-                print("Invalid input. Try again.")
+			case "0":
+				break
+			case _:
+				print("Invalid input. Try again.")
 
 def  profiles_menu():
      while True:
