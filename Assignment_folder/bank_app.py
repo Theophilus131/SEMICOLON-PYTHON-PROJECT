@@ -14,5 +14,9 @@ def deposit_funds_into_account(name, amount, balance):
 	return balance
 		
 
-#def withdraw(name, amount_to_be_withdrawn, balance):
-	
+def withdraw(name, amount_to_be_withdrawn, balance):
+	amount_to_be_withdrawn = float(amount_to_be_withdrawn)
+	if amount_to_be_withdrawn < 0:
+		return None
+	balance = balance - amount_to_be_withdrawn 
+	return balance 

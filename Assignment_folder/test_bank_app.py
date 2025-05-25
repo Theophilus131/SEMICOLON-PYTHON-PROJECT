@@ -33,7 +33,13 @@ class TestBank(unittest.TestCase):
 		name = account[0]
 		self.assertTrue(name.isalpha()) 
 
-		
+	def find_account(phone_number):
+		for account in accounts:
+			if account[1] == phone_number:
+				return account
+		raise ValueError("Account not found")
+
+
 	def test_phone_number_identify(self):
 		account = ["theophilus", "8104116411", 100]
 		phone_number = account[1]
@@ -46,8 +52,12 @@ class TestBank(unittest.TestCase):
 		name = account[0]
 		self.assertEqual(name ,"theophilus")
 
+
 	def test_that_deposit_function_exists(self):
 		bank_app.deposit_funds_into_account("theophilus", 1000, 100)
+	
+	def test_you_can_deposit_amount_in_decimal(self):
+		actual = ("theophilus", 500.5, 1500)
 
 	def test_deposit_amount_is_not_negative(self):
 		bank_app.create_account("theophilus", -1000, 2000)
@@ -55,7 +65,15 @@ class TestBank(unittest.TestCase):
 
 
 	def test_that_withdraw_function_exists(self):
-		bank_app.withdraw()			
+		bank_app.withdraw("theophilus", 500 , 2000)
+
+	def test_withdraw_function_is_not_negative(self):
+		bank_app.create_account("theophilus", -1000, 2000)
+			
+	def test_you_can_withdraw(self):
+		actual = ("theophilus", 500 , 1500)
+				
 		
+	def test_you_can_withdraw_amount_in_decimal(self):
+		actual = ("theophilus", 500.5, 1500)
 		
-	
