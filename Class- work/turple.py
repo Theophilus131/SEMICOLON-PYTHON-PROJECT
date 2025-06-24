@@ -17,4 +17,11 @@ def unpacking_collection(numbers):
 
     return  first_number, second_number, third_number, others
 
-print(unpacking_collection(my_list))
+#print(unpacking_collection(my_list))
+
+def slice_collection(numbers):
+    return numbers[0:8:2]
+print(slice_collection(my_list))
+
+
+
