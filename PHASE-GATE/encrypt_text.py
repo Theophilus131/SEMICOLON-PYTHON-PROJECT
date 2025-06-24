@@ -5,4 +5,3 @@ def encrypt_text(string):
 	
 	for user_input in range(1 , 14):
 		return user_input
-#print(encrypt_text)

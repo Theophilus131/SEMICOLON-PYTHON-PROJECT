@@ -49,7 +49,7 @@ while True:
 
 		print(f" withdrawal fee is {withdrawal_fee}")
 
-		print(f" remaining balance is {remaining_balance}")
+	print(f" remaining balance is {remaining_balance}")
 
 	
 	#if user_select == '2':

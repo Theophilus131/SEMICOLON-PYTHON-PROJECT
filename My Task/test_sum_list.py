@@ -46,7 +46,7 @@ class Testsum_list(TestCase):
 		actual = sum_list.sum_list(["1", "2", "3"])
 		
 		expected = 20
-		with self.assertRaises(TypeError)
+		self.assertRaises(TypeError)
 
 
 

@@ -60,6 +60,5 @@ def average_element(numbers):
 
 
 
-if __name__ == '__main__':
-	print(multiply_element_third_position([1, 2, 3, 4, 5,7,8, 9, 10, 11]))
+
 

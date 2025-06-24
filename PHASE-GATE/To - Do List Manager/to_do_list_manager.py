@@ -1,4 +1,4 @@
-Tasks = ['van', 'car', 'video', 'game', 'gun'] 
+Tasks = [] 
 
 
 def main_menu():
@@ -43,7 +43,7 @@ def add_a_task_menu():
 		match user:
 			case "1": 
 				add = input("add what you want to add: ")
-				Task.append(add)
+				Tasks.append(add)
 				print(" task added")
 			
 			case "0": 
@@ -65,9 +65,9 @@ def view_all_tasks_menu():
 
 		match user:
 			case "1":
-				view = input(" which task do you want to view ")
-				Task.append(view)
-				print("view a tasks")
+				print("here are your tasks: ")
+				for index, task in enumerate(Tasks):
+					print(f"{index}.{task}")
 			
 			case "0": 
 				print("Exiting store ")
@@ -109,9 +109,13 @@ def delete_a_task_menu():
 
 		match user:
 			case "1":
-				delete = input("what do you want to delete: ")
-				Task.pop(delete)
-				print("Delete a task  ")
+				delete = input("enter index of task to delete: ")
+				if delete.isdigit():
+					delete = int(delete)
+				if 0 <= delete < len(Tasks):
+					Tasks.pop(delete)
+					print("Deleted the task  ")
+			
 			
 			case "0": 
 				print("Exiting store ")
@@ -119,10 +123,6 @@ def delete_a_task_menu():
 			case _: print("Invalid input. Try again.")
 
 
-
-
-						
-	
 
 		
 main_menu()

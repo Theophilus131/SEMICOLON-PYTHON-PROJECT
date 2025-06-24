@@ -45,8 +45,6 @@ class TestBank(unittest.TestCase):
 		phone_number = account[1]
 		self.assertEqual( phone_number, "8104116411" )
 
-	
-
 	def test_account_name_identity(self):
 		account = ["theophilus", "8104116411", 100]
 		name = account[0]
@@ -62,7 +60,6 @@ class TestBank(unittest.TestCase):
 	def test_deposit_amount_is_not_negative(self):
 		bank_app.create_account("theophilus", -1000, 2000)
 	
-
 
 	def test_that_withdraw_function_exists(self):
 		bank_app.withdraw("theophilus", 500 , 2000)

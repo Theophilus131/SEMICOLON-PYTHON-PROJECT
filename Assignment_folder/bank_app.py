@@ -20,3 +20,12 @@ def withdraw(name, amount_to_be_withdrawn, balance):
 		return None
 	balance = balance - amount_to_be_withdrawn 
 	return balance 
+
+def customers_in_the_bank(customer):
+	if not customers:
+		return None
+	else:
+        	return customer
+ 
+
+def find_customer():

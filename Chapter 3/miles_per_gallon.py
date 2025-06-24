@@ -21,8 +21,8 @@ while miles_driven != -1:
 	overall_average_miles_per_gallon = float (total_miles / total_gallons)
 
 
-	print(f" Miles per gallon for this trip: {miles_per_gallon} ")
+print(f" Miles per gallon for this trip: {miles_per_gallon} ")
 
-	print(f" the overall average {overall_average_miles_per_gallon}")
+print(f" the overall average {overall_average_miles_per_gallon}")
 
 

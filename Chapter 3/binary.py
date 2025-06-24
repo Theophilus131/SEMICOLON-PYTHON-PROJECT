@@ -7,4 +7,4 @@ while binary_input > 0:
         decimal_value += 2 ** position
     binary_input //= 10 
     position += 1 
-print("The decimal equivalent is:", decimal_value)
+print("The decimal equvalant of the number is:", decimal_value)
