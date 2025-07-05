@@ -8,9 +8,14 @@ def my_function(word):
             my_dictionary[word] = 1
     return my_dictionary;
 
-if __name__ == "__main__":
-    print("Length of the word:", my_function("google"))
 
+def my_function2(word):
+
+    return {letter : word.count(letter) for letter in word}
+        
+if __name__ == "__main__":
+    #print("occurrence of the word:", my_function("google"))
+    print("occurrence of the word:", my_function2("google"))
 
 
 
