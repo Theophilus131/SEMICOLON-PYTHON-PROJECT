@@ -9,10 +9,9 @@ pattern = re.compile(r'[a-zA-Z]+@+gmail\.com')
 #print(matches)
 
 text = "Alice and Bob are Good Friends."
-pattern_ = re.compile(r'[A-Za-z]+')
+pattern_ = re.compile(r'[A-Z]\w+')
 matches = pattern_.findall(text)
 print(matches)
-
 
 
 sentence = "Hello! How are you doing?"
