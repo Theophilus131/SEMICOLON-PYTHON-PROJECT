@@ -17,6 +17,6 @@ print(matches)
 sentence = "Hello! How are you doing?"
 pattern = re.compile(r'\w+')
 matches = pattern.findall(sentence)
-print(sentence)
+print(matches)
 
 
