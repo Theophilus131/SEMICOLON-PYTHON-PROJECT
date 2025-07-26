@@ -14,25 +14,38 @@ class PhoneBook:
 
     @property
     def find_contact_by_first_name(self,first_name)-> Contacts:
-        if first_name is in contacts.Contacts:
-            return first_name
-        return None
+        for contact in self.Contacts:
+            if first_name == contact.first_name:
+                return first_name
+            else:
+                raise Exception
+
+
 
     @property
     def find_contact_by_last_name(self,last_name)-> Contacts:
-        if last_name is in contacts.Contacts:
-            return last_name
-        return None
+        for contact in self.Contacts:
+            if last_name == contact.last_name:
+                return contact
+            else:
+                raise Exception
 
     @property
     def find_contact_by_phone_number(self,phone_number)-> Contacts:
-        if phone_number is in contacts.Contacts:
-            return phone_number
-        return None
+        for contact in self.Contacts:
+            if phone_number == contact.phone_number:
+                return contact
+            else:
+                raise Exception
 
 
     @property
     def edit_contact(self, first_name, last_name)-> None:
-        pass
+        for contact in self.Contacts:
+            if first_name == contact.first_name and last_name == contact.last_name:
+                contact.first_name = first_name
+                contact.last_name = last_name
+
+
 
 
