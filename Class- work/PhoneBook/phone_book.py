@@ -1,16 +1,17 @@
 from PhoneBook import contacts
+from PhoneBook.contacts import Contacts
 
 
 class PhoneBook:
     Contacts = []
 
     @property
-    def addContact(self,first_name,last_name,phone_number)-> None:
-       pass
+    def add_contact(self,first_name,last_name,phone_number)-> None:
+       self.Contacts.append(Contacts(first_name,last_name,phone_number))
 
     @property
-    def removeContact(self,first_name,last_name)-> None:
-        pass
+    def remove_contact(self,first_name,last_name)-> None:
+        self.Contacts.remove(Contacts(first_name,last_name))
 
     @property
     def find_contact_by_first_name(self,first_name)-> Contacts:
