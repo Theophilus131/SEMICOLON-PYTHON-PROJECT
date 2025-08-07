@@ -7,8 +7,7 @@ class Human:
         
     def __str__(self):
         return f'name: {self.name}\n age: {self.age}\n dob: {self.dob}'
-        
-    
+
 class Employee(Human):
     def __init__(self, name, age,dob, employee_id):
         super().__init__(name, age,dob)
