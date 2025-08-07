@@ -24,9 +24,7 @@ monthConversions = {
 
 	"Nov" : "November",
 
-	"Dec": "December",
-
-}
+	"Dec": "December",}
 
 #print(monthConversions["M"] )
 
